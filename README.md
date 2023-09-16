@@ -5,17 +5,7 @@
 - **SASS** 
 - **GULP**
 
-<p align="center">
-  <img width="960" alt="image1" src="https://github.com/warning11223/rocket-business/assets/70014989/f51b6b38-06bf-4cc4-9658-c4772f113da0">
-  <br>
-</p>
 
-<p align="center">
-  <img width="169" alt="image2" src="https://github.com/warning11223/rocket-business/assets/70014989/153652a5-0e34-4683-b6e6-7c41f41b6417">
-  <br>
-</p>
-
-<p align="center">
-  <img width="533" alt="image3" src="https://github.com/warning11223/rocket-business/assets/70014989/5e90a729-90ae-4a6c-bf9c-11c7e371753e">
-  <br>
-</p>
+<img width="960" alt="image" src="https://github.com/warning11223/rocket-business/assets/70014989/f51b6b38-06bf-4cc4-9658-c4772f113da0">
+<img width="960" alt="image" src="https://github.com/warning11223/rocket-business/assets/70014989/ec5effc1-a881-4aa4-9ce5-276bdaadd8a4">
+<img width="960" alt="image" src="https://github.com/warning11223/rocket-business/assets/70014989/0e1e3865-8573-4926-9f98-c5efa8e8d1ee">
