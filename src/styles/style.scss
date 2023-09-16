@@ -13,6 +13,10 @@ body {
 
 /*----------------------------header--------------------------*/
 
+.burger-menu {
+  display: none;
+}
+
 .header {
   background: #fff;
 
@@ -106,7 +110,6 @@ body {
   background: $green-header-bg;
   z-index: 22;
 
-
   &__container {
     max-width: 1138px;
     margin: 0 auto;
@@ -120,7 +123,8 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
-
+    padding: 0;
+    margin: 0;
 
     &__item a {
       font-size: 16px;
@@ -140,11 +144,11 @@ body {
 /*----------------------------info--------------------------*/
 
 .info {
-  height: 533px;
+  min-height: 533px;
   background: $info-bg;
 
   &__container {
-    height: 533px;
+    min-height: 533px;
     background: url("../../dist/img/info-bg.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -157,7 +161,7 @@ body {
   }
 
   &__text {
-    max-width: 416px;
+    max-width: 367px;
     padding-top: 144px;
   }
 
@@ -210,8 +214,6 @@ body {
     padding: 74px 53px 56px 63px;
     width: 527px;
     background: $slide-bg;
-
-
 
     &__title {
       color: $dark;
@@ -331,7 +333,7 @@ body {
     &:hover {
       path {
         transition: all .2s ease-in-out;
-        fill: $green ;
+        fill: $green;
       }
     }
   }
@@ -342,7 +344,7 @@ body {
     &:hover {
       path {
         transition: all .2s ease-in-out;
-        fill: $green ;
+        fill: $green;
       }
     }
   }
@@ -400,7 +402,7 @@ body {
     gap: 15px;
     list-style: none;
   }
-  
+
   &__icon {
     cursor: pointer;
   }
@@ -492,46 +494,50 @@ body {
 }
 
 
-
 /*-----------------media---------------------*/
 
 @media (max-width: 1570px) {
   .info {
     background: #ffffff;
   }
+
   .info__container {
     background: none;
   }
+
   .info__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .info__img {
     display: block;
-    width: 100%; /* Устанавливаем максимальную ширину изображения равной ширине экрана */
+    width: 100%;
     height: auto;
   }
+
   .info__text {
-    max-width: 50%;
+    max-width: 90%;
     padding-top: 100px;
-  }
-  .carousel {
-    //padding-top: 440px;
+    text-align: center;
   }
 }
 
 @media (max-width: 1138px) {
-  .header__container, .nav{
+  .header__container, .nav {
     padding: 0 19px 0px 17px;
   }
+
   .nav__container {
     justify-content: center;
   }
+
   .info__text {
     padding-top: 80px;
   }
+
   .footer {
 
     &__container {
@@ -737,9 +743,11 @@ body {
     transform: rotate(-45deg);
     bottom: 9px;
   }
+
   .info__text {
-    padding: 80px 17px 80px 17px;
     max-width: 100%;
+    padding: 34px 17px 102px 17px;
+    text-align: left;
   }
 
   .popup {
@@ -747,8 +755,12 @@ body {
     height: 50%;
   }
 
-  .carousel__arrows {
-    margin-bottom: 10px;
+  .carousel {
+    padding-top: 0px;
+
+    &__arrows {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -791,6 +803,11 @@ body {
 
 @media (max-width: 500px) {
   .info {
+    min-height: 500px;
+
+    &__container {
+      min-height: 500px;
+    }
 
     &__text {
       padding: 34px 17px 0px 17px;
@@ -805,12 +822,22 @@ body {
       font-size: 14px;
     }
   }
+
+  .header__left img {
+    height: 18px;
+    width: 62px;
+  }
+
+  .header__container {
+    height: 65px;
+  }
 }
 
 @media (max-width: 370px) {
   .carousel__desc__btn--white {
     display: none;
   }
+
   .popup {
     width: 80%;
     height: 40%;

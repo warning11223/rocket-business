@@ -9,10 +9,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -35,19 +32,18 @@
             <div class="header__right">
                 <div class="header__right__wrapper">
                     <img class="header__right__icon" src="img/whatsapp.svg" alt="whatsapp">
-                    <a class="header__right__whatsapp" href="tel:+7(863) 000 00 00">+7(863) 000 00 00</a>
+                    <a class="header__right__whatsapp" href="tel:+7(863)0000000">+7(863) 000 00 00</a>
                     <p class="header__address__mobile">Ростов-на-Дону</p>
                 </div>
                 <button class="header__right__btn">Записаться на прием</button>
             </div>
         </div>
     </div>
-
 </header>
 
 <section class="nav">
-    <div class="nav__container">
-        <nav class="nav__list">
+    <nav class="nav__container">
+        <ul class="nav__list">
             <li class="nav__list__item">
                 <a href="#">О клинике</a>
             </li>
@@ -64,8 +60,8 @@
                 <a href="#">Контакты</a>
             </li>
             <button class="nav__btn">Записаться на прием</button>
-        </nav>
-    </div>
+        </ul>
+    </nav>
 </section>
 
 <section class="info">
@@ -81,7 +77,6 @@
         </div>
     </div>
 </section>
-
 
 <section class="carousel">
     <div class="carousel__container">
@@ -221,7 +216,7 @@
 <div class="popup-overlay" id="popup">
     <div class="popup">
         <h2>Записаться на прием</h2>
-        <form id="contact-form" action="send.php" method="post">
+        <form id="contact-form" action="php/send.php" method="post">
             <div class="popup__container">
                 <input type="text" placeholder="Name" name="name" required>
                 <input type="text" placeholder="Message" name="message" required>
@@ -231,9 +226,6 @@
         <button class="close-popup" id="close-popup">X</button>
     </div>
 </div>
-
-
-
 
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
