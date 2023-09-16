@@ -52,7 +52,7 @@ body {
 
     &__city {
       &:before {
-        content: url("../../dist/img/location.svg");
+        content: url("../../dist/images/location.svg");
         position: absolute;
         width: 50px;
         height: 50px;
@@ -149,7 +149,7 @@ body {
 
   &__container {
     min-height: 533px;
-    background: url("../../dist/img/info-bg.png");
+    background: url("../../dist/images/info-bg.png");
     background-repeat: no-repeat;
     background-position: right;
   }
