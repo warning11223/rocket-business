@@ -11,6 +11,13 @@ body {
   font-family: 'PT Sans Caption', sans-serif;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 /*----------------------------header--------------------------*/
 
 .burger-menu {
@@ -534,6 +541,10 @@ body {
     justify-content: center;
   }
 
+  .info {
+    min-height: auto;
+  }
+
   .info__text {
     padding-top: 80px;
   }
@@ -615,6 +626,7 @@ body {
 
     &__container {
       align-items: flex-start;
+      height: auto;
     }
   }
 
@@ -701,6 +713,8 @@ body {
     }
 
     &__container {
+      display: flex;
+      flex-direction: column;
       height: 100vh;
       justify-content: flex-start;
       align-items: flex-start;
