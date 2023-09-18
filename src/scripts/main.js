@@ -77,7 +77,6 @@ const swiper = new Swiper(".swiper", {
       document.getElementById("currentSlide").textContent = currentSlide;
 
       const totalSlides = this.slides.length;
-
       document.getElementById("totalSlides").textContent = totalSlides;
     },
   },
